@@ -5,7 +5,7 @@ Current status on 2026-05-03:
 - The local `skills/legal-document-drafting/` skill is complete and validated.
 - The repository already contains the core skill entry and key manifests/scripts uploaded through the GitHub connector.
 - A complete compressed archive has been prepared locally and archive restore instructions/checksums have been added under `skills/legal-document-drafting/archive/`.
-- Archive split upload is in progress: `legal-document-drafting-skill.tar.gz.b64.part001` through `part024` have been uploaded.
+- Archive split upload is in progress: `legal-document-drafting-skill.tar.gz.b64.part001` through `part028` have been uploaded.
 
 Local complete package:
 
@@ -19,7 +19,7 @@ Base64 archive:
 - SHA-256: `588751a2948631b754f42eb007f076bd7424102dfa752ba610164fc2125a2e38`
 - Size: 135105 bytes
 - Split plan: 136 chunks of 1000 base64 characters, except the final chunk.
-- Uploaded so far: 24 / 136 chunks.
+- Uploaded so far: 28 / 136 chunks.
 
 Local package contents:
 
@@ -42,6 +42,6 @@ OK: expanded source manifest, metadata, 2025 status, and coverage thresholds val
 Git transport notes:
 
 - Direct HTTPS clone now works when network permission is granted.
-- Direct Git push still fails because this machine has no GitHub HTTPS username/token configured for non-interactive Git.
-- SSH push also fails because no GitHub public key is available on this machine.
+- Direct Git push still fails in this Codex sandbox because `gh auth status` still reports the saved token as invalid here.
+- The sandbox also currently cannot resolve `github.com` via local shell DNS, so connector upload is being used as the reliable path.
 - The GitHub connector can write files, but large payloads occasionally fail, so archive chunks are being uploaded in smaller parts.
