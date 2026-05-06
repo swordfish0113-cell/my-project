@@ -17,18 +17,20 @@ local_path: skills/legal-document-drafting/source_manifest/collection_report.md
 
 ## 已完成
 
-- 来源记录数：249
-- official_collected：10
-- official_reference_only：86
+- 来源记录数：248
+- official_collected：77
+- official_reference_only：19
 - guide_collected：146
 
 ## 2025年67类示范文本
 
-已逐类建立 67 条状态记录和单独 Markdown 文件。当前本地网络访问法院站点附件时出现 TLS 连接失败，因此未把附件正文标记为已收集；所有 67 条均为 reference-only，需人工或可用网络环境继续下载核验。
+已根据用户提供的《最高人民法院、司法部、中华全国律师协会关于印发部分案件起诉状答辩状示范文本的通知（法〔2025〕82号）》DOCX 原件完成 67 类逐类拆分。每类均已写入 assets/official_templates/ 对应领域目录，source_status 更新为 official_collected，并保留原始 DOCX。
+
+使用定位：67 类示范文本为要素式/表格式文本。skill 默认生成传统叙述式诉状、答辩状；本批模板默认作为要素核对表和结构参考使用。只有用户明确要求要素式、表格式或按 2025 示范文本填写时，才直接采用该模板形态。
 
 ## 刑事和律师实务
 
-criminal 记录数：77。刑事官方正文不足 5 条，原因是除 2025 刑事自诉类示范文本外，取保、不捕、不诉、排非、辩护词等多无统一公开模板；已按刑诉法和最高检规则建立指南。
+criminal 记录数：76。刑事官方正文不足 5 条，原因是除 2025 刑事自诉类示范文本外，取保、不捕、不诉、排非、辩护词等多无统一公开模板；已按刑诉法和最高检规则建立指南。
 
 lawyer_practice 记录数：60。多数律师实务文书没有全国统一模板，已优先按司法部、中国政府网、全国律协业务指引建立 guide_collected。
 

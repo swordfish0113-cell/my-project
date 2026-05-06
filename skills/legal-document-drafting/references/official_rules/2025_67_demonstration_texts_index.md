@@ -17,4 +17,6 @@ local_path: skills/legal-document-drafting/references/official_rules/2025_67_dem
 
 最高法发布页确认示范文本覆盖9个领域、67类常见纠纷，并自2025年7月14日起推广使用。
 
-本地逐类状态以 `source_manifest/2025_67_texts_status.csv` 为准。当前附件下载因 TLS 连接失败未完成，已按类建立 reference-only 文件。
+本地逐类状态以 `source_manifest/2025_67_texts_status.csv` 为准。已根据用户提供的法〔2025〕82号 DOCX 原件完成 67 类正文拆分，正式模板位于 `assets/official_templates/` 对应领域目录。
+
+使用限制：该 67 类文本为要素式/表格式示范文本。skill 默认生成传统叙述式诉状、答辩状；本批文本默认用于要素核对、事实补全、证据清单检查和特别提示核查。只有用户明确要求要素式、表格式或按 2025 示范文本填写时，才直接按该结构输出。

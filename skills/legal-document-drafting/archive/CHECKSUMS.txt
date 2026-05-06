@@ -1,6 +1,0 @@
-0c6b90a43871d6c977ad387217a370ac7d1b92eb0a6321c87a638d83021c8697  legal-document-drafting-skill.tar.gz
-588751a2948631b754f42eb007f076bd7424102dfa752ba610164fc2125a2e38  legal-document-drafting-skill.tar.gz.b64
-
-sizes:
-101326 legal-document-drafting-skill.tar.gz
-135105 legal-document-drafting-skill.tar.gz.b64

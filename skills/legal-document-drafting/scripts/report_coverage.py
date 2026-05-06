@@ -34,7 +34,10 @@ def main(argv):
     print("lawyer_practice覆盖率:", f"{fields['lawyer_practice']}/35")
     print("2025年67类示范文本完成率:", f"{completed_2025}/67 downloaded; {len(status_rows)}/67 indexed")
     print("高风险缺口清单:", "；".join(risks) if risks else "无")
-    print("下一步建议: 在可访问法院附件的网络环境中批量下载2025年doc/docx并转换Markdown；补充经审定的律师实务内部模板。")
+    if completed_2025 == 67:
+        print("下一步建议: 抽查2025年67类Markdown拆分质量；补充经审定的律师实务内部模板。")
+    else:
+        print("下一步建议: 在可访问法院附件的网络环境中批量下载2025年doc/docx并转换Markdown；补充经审定的律师实务内部模板。")
     return 0
 
 if __name__ == "__main__":
